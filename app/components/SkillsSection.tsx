@@ -1,7 +1,7 @@
 'use client';
 
 import { techCardsItems } from "../_lib/constants";
-import TechCard from "./TechCard";
+import TechCard from "./ui/TechCard";
 
 const Skills = () => {
   return (
