@@ -6,6 +6,8 @@ import {
 } from "lucide-react";
 import { Navbar } from "./components/ui/Navbar";
 import HeroSection from "./components/HeroSection";
+import Skills from "./components/SkillsSection";
+import { Projects } from "./components/ProjectsSection";
 
 const navItems = [
   { name: "Home", link: "#home", icon: <House /> },
@@ -20,15 +22,9 @@ const Homepage = () => {
       <div className="max-w-7xl mx-auto w-full">
         <Navbar navItems={navItems} />
         <HeroSection />
-          
-          <section id="work" className="min-h-screen flex items-center justify-center">
-            <h2 className="text-3xl font-bold text-center">My Work</h2>
-          </section>
-          
-          <section id="about" className="min-h-screen flex items-center justify-center">
-            <h2 className="text-3xl font-bold text-center">About Me</h2>
-          </section>
-          
+        <Skills />
+        <Projects />
+
           <section id="contact" className="min-h-screen flex items-center justify-center">
             <h2 className="text-3xl font-bold text-center">Contact</h2>
           </section>

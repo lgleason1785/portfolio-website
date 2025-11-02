@@ -6,34 +6,13 @@ import ShinyButton from "./ui/ShinyButton";
 
 const HeroSection = () => {
     return (
-        <>
-            {/* Grid background with radial fade */}
-            <div className="h-screen w-full absolute top-0 left-0 overflow-hidden">
-                {/* Grid pattern */}
-                <div 
-                    className="h-full w-full opacity-20"
-                    style={{
-                        backgroundImage: `
-                            linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
-                        `,
-                        backgroundSize: '20px 20px'
-                    }}
-                />
-                {/* Radial fade overlay */}
-                <div 
-                    className="absolute inset-0"
-                    style={{
-                        background: `radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.8) 100%)`
-                    }}
-                />
-            </div>
+        <>      
             <div 
             className="pb-20 pt-36 sm:p-0 sm:min-h-screen flex flex-col items-center justify-center relative"
             id="#home"
             >
                 <div className="flex flex-col justify-center items-center relative z-10 text-center">
-                    <h1 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide text-[#E29211] ">
+                    <h1 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide text-[#E29211]">
                         Logan Gleason
                     </h1>
                     <div className="text-2xl md:text-3xl font-medium text-white">
@@ -63,7 +42,7 @@ const HeroSection = () => {
                         download
                         className="flex items-center gap-2.5 group"
                         >
-                        <Download className="text-[#E29211] group-hover:text-[#F5A623] transition-colors duration-200" />
+                        <Download className="text-[#E29211]" />
                         <span className="group-hover:text-white/70 transition-colors duration-200 font-semibold">
                             Download CV
                         </span>
