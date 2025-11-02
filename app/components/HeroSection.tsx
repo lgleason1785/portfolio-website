@@ -1,5 +1,5 @@
 'use client';
-import { ChevronRight, Download } from "lucide-react";
+import { ChevronRight, Download, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import ShinyButton from "./ui/ShinyButton";
@@ -42,9 +42,35 @@ const HeroSection = () => {
                         download
                         className="flex items-center gap-2.5 group"
                         >
-                        <Download className="text-[#E29211]" />
+                        <Download className="text-[#E29211] group-hover:text-[#F5A623] transition-colors duration-200" />
                         <span className="group-hover:text-white/70 transition-colors duration-200 font-semibold">
                             Download CV
+                        </span>
+                    </a>
+                </div>
+                
+                {/* Social Media Links */}
+                <div className="flex items-center gap-6 mt-6">
+                    <a
+                        href="https://github.com/lgleason1785"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 group hover:scale-105 transition-all duration-200"
+                    >
+                        <Github className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors duration-200" />
+                        <span className="text-gray-400 group-hover:text-white transition-colors duration-200 font-medium">
+                            GitHub
+                        </span>
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/logangleason"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 group hover:scale-105 transition-all duration-200"
+                    >
+                        <Linkedin className="w-6 h-6 text-gray-400 group-hover:text-blue-400 transition-colors duration-200" />
+                        <span className="text-gray-400 group-hover:text-blue-400 transition-colors duration-200 font-medium">
+                            LinkedIn
                         </span>
                     </a>
                 </div>
