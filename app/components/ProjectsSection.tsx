@@ -20,8 +20,8 @@ export const Projects = (): JSX.Element => {
   };
 
   return (
-    <div className="w-full py-16 sm:py-24 px-5 sm:px-10" id="work">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full py-16 sm:py-24 px-5 sm:px-10 relative overflow-hidden" id="work">
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex justify-between items-center mb-8 pr-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#E29211]">My Projects</h2>
           <ShinyButton icon={<ChevronRight />}>

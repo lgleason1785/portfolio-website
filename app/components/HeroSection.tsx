@@ -8,7 +8,7 @@ const HeroSection = () => {
     return (
         <>      
             <div 
-            className="pb-20 pt-36 sm:p-0 sm:min-h-screen flex flex-col items-center justify-center relative"
+            className="pb-20 pt-36 sm:p-0 sm:min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
             id="#home"
             >
                 <div className="flex flex-col justify-center items-center relative z-10 text-center">
@@ -33,7 +33,7 @@ const HeroSection = () => {
                         />
                     </div>
                 </div>
-                <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
+                <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 relative z-10">
                     <ShinyButton icon={<ChevronRight />}>
                             <Link href="#work">See My Projects</Link>
                     </ShinyButton>
@@ -50,7 +50,7 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Social Media Links */}
-                <div className="flex items-center gap-6 mt-6">
+                <div className="flex items-center gap-6 mt-6 relative z-10">
                     <a
                         href="https://github.com/lgleason1785"
                         target="_blank"

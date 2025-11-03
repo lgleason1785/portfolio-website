@@ -57,7 +57,7 @@ export const techCardsItems = [
     },
     {
         name: "PostgreSQL", 
-        description: "OR Database System",
+        description: "OSR Database System",
         imageUrl: "/images/postgresql-logo-svgrepo-com.svg",
         bgColor: "bg-[#293743]",
         link: "https://postgresql.org",

@@ -9,6 +9,7 @@ import HeroSection from "./components/HeroSection";
 import Skills from "./components/SkillsSection";
 import { Projects } from "./components/ProjectsSection";
 
+
 const navItems = [
   { name: "Home", link: "#home", icon: <House /> },
   { name: "Work", link: "#work", icon: <BriefcaseBusiness /> },
@@ -18,18 +19,20 @@ const navItems = [
 
 const Homepage = () => {
   return (
-    <main className="flex flex-col px-5 sm:px-10 relative min-h-screen">
-      <div className="max-w-7xl mx-auto w-full">
-        <Navbar navItems={navItems} />
-        <HeroSection />
-        <Skills />
-        <Projects />
+    <> 
+      <main className="flex flex-col px-5 sm:px-10 relative min-h-screen">
+        <div className="max-w-7xl mx-auto w-full relative z-10">
+          <Navbar navItems={navItems} />
+          <HeroSection />
+          <Skills />
+          <Projects />
 
           <section id="contact" className="min-h-screen flex items-center justify-center">
             <h2 className="text-3xl font-bold text-center">Contact</h2>
           </section>
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   );
 };
 
