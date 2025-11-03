@@ -12,10 +12,10 @@ const HeroSection = () => {
             id="#home"
             >
                 <div className="flex flex-col justify-center items-center relative z-10 text-center">
-                    <h1 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide text-[#E29211]">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide text-[#E29211] font-sans">
                         Logan Gleason
                     </h1>
-                    <div className="text-2xl md:text-3xl font-medium text-white">
+                    <div className="text-xl sm:text-2xl md:text-3xl font-medium text-white font-sans">
                         <TypeAnimation
                             sequence={[
                                 "Fullstack Developer",

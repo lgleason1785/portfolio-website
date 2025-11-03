@@ -4,40 +4,12 @@ import { ChevronRight, ChevronLeft } from "lucide-react";
 import ShinyButton from "./ui/ShinyButton";
 import ProjectCard, { Project } from "./ui/ProjectCard";
 import Link from "next/link";
+import { projectsItems } from "../_lib/constants";
 
 export const Projects = (): JSX.Element => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-stack web application built with Next.js and PostgreSQL",
-      image: "https://picsum.photos/800/600?random=1",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL"]
-    },
-    {
-      id: 2,
-      title: "Security Dashboard",
-      description: "Real-time cybersecurity monitoring dashboard",
-      image: "https://picsum.photos/800/600?random=2",
-      technologies: ["React", "Python", "Node.js"]
-    },
-    {
-      id: 3,
-      title: "IoT Control System",
-      description: "Embedded systems project for industrial automation",
-      image: "https://picsum.photos/800/600?random=3",
-      technologies: ["Arduino", "C++", "Python"]
-    },
-    {
-      id: 4,
-      title: "Malware Analysis Tool",
-      description: "Advanced malware detection and analysis platform",
-      image: "https://picsum.photos/800/600?random=4",
-      technologies: ["Python", "Machine Learning", "Cybersecurity"]
-    }
-  ];
+  const projects: Project[] = projectsItems;
 
   const nextProject = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
@@ -51,7 +23,7 @@ export const Projects = (): JSX.Element => {
     <div className="w-full py-16 sm:py-24 px-5 sm:px-10" id="work">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8 pr-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#E29211]">My Projects</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#E29211]">My Projects</h2>
           <ShinyButton icon={<ChevronRight />}>
             <Link href="#work">All Projects</Link>
           </ShinyButton>
